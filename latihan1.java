@@ -12,10 +12,15 @@ public class latihan1 {
     
 public static void main(String[]args ) {
     Scanner input = new Scanner (System.in);
-    float kehadiran, nilai_akhir; 
+    float kehadiran,nilai_tugas, nilai_akhir; 
     
-    System.out.println ("kehadiran");
-    nilai_akhir = input.nextFloat();
+    System.out.println ("Masukan persentase Kehadiran:");
+    kehadiran = input.nextFloat();
+    
+    System.out.print("Masukkan Nilai Tugas/Ujian: ");
+    nilai_tugas = input.nextFloat();
+    
+    nilai_akhir = (kehadiran * 0.3f) + (nilai_tugas * 0.7f);
     
     if(nilai_akhir >=80){
         System.out.println("A");
